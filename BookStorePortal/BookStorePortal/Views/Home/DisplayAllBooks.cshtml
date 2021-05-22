@@ -1,0 +1,134 @@
+﻿@model IEnumerable<BookStorePortal.Models.BookDetails>
+
+@{
+    ViewData["Title"] = "DisplayAllBooks";
+}
+
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/css/StyleSheet.css" rel="stylesheet" />
+<script src="~/js/site.js"></script>
+
+
+<div>
+    <main>
+        <table class="table" id="table-bg">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BookName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Author)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Publisher)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.price)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.price)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Category)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Subcategory)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AddedBy)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.modifiedBy)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AddedOn)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.LastModifiedOn)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BookId)
+                        </td>
+                        <td>
+                            @Html.ActionLink(item.BookName, "GetBookDetails" ,new {id = item.BookId })
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Author)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Publisher)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.pages)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Subcategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AddedBy)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.modifiedBy)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AddedOn)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastModifiedOn)
+                        </td>
+                        <td>
+                            <a asp-action="Home/Index" asp-route-id="@item.BookId">Edit</a>
+                            <a asp-action="Home/Index" asp-route-id="@item.BookId">Delete</a>
+                            <a asp-action="Home/Index" asp-route-id="@item.BookId">Delist</a>
+                            <a asp-action="Home/Index" asp-route-id="@item.BookId">View</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+</div>
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Book details</p>
+    </div>
+
+</div>
+<script>
+function DisplaySpecificBook() {
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("details");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    }
+    </script>

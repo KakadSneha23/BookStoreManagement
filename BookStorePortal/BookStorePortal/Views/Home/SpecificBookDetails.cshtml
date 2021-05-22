@@ -1,0 +1,124 @@
+﻿@model BookStorePortal.Models.BookDetails
+
+@{
+    ViewData["Title"] = "DisplayAllBooks";
+}
+
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="~/js/site.js"></script>
+
+<div>
+
+    <table class="table">
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayName("Book Id")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.BookId)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Book Name")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.BookName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Author")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Author)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Publisher")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Publisher)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Pages")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.pages)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Price")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.pages)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Category")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Category)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Subcategory")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Subcategory)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Added By ")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.AddedBy)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Modified By ")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.modifiedBy)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Added On")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.AddedOn)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DisplayName("Modified On")
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.LastModifiedOn)
+                </td>
+            </tr>
+            <tr id="details-btn">
+                <td>
+                    <button><a asp-action="Home/Index" asp-route-id="@Model.BookId">Edit</a></button>
+                    <button><a asp-action="Home/Index" asp-route-id="@Model.BookId">Delete</a></button>
+                </td>
+                <td>
+                    <button><a asp-action="Home/Index" asp-route-id="@Model.BookId">Delist</a></button>
+                    <button><a asp-action="Home/Index" asp-route-id="@Model.BookId">View</a></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
