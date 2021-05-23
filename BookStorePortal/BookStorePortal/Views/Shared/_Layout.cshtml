@@ -6,119 +6,48 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BookStorePortal</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="Style.css" />
     <script src="~/js/site.js"></script>
-    <style>
-       /*--------------navigation bar----------------------*/
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            
-        }
-
-        li {
-            float: left;
-        }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-               
-            }
-
-                li a:hover {
-                    background-color: #4CAF50;
-                }
- 
-    /*--------------------Search Box and button------------------------*/
-        form.searching input[type=text] {
-            padding: 14px;
-            font-size: 17px;
-            border: 1px solid grey;
-            float: left;
-            width: 80%;
-            background: #f1f1f1;
-            margin-right: 0;
-            
-        }
-
-    /* Style the submit button */
-    form.searching button {
-    float: left;
-    width: 20%;    
-    background: #4CAF50;
-    color: white;
-    height: 100%;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
     
-    }
-
-    form.searching button:hover {
-    background: #b6ff00;
-    }
-
-    /* Clear floats */
-    form.searching::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-    </style>
     </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookStorePortal</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="DisplayAllBooks">All Books</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AddBook">Add new book</a>
-                            </li>
-                            <!--li class="nav-item">
-                                <form class="searching" asp-action="GetBookDetails" method="get">
-                                    <ul>
-                                        <li class="nav-item"><input  type="number" name="BookId" placeholder="Search Book here.." asp-controller="Home" asp-action="Search"></li>
-                                        <li class="nav-item"><button type="submit"><i class="fa fa-search"></i></button></li>
-                                    </ul>
-                                </form>
-                            </li-->
-                        </ul>
+                        <div class="headers">
+                            <h1>Virtual Book Store </h1>
+                            <h2><i class="fa fa-book"></i> Books <i class="fa fa-book"></i></h2>
+                        </div>
+                       
                     </div>
                 </div>
             </nav>
         </header>
+
         <div class="container bg">
             <main role="main" class="pb-3">
+                
                 @RenderBody()
-
+                <div>
+                    <ul class="ButtonLinks justify-content-between" >
+                        <li>
+                            <button type="button" class="btn btn-success"><a asp-area="" asp-controller="Home" asp-action="AddBook">New Book <i class="fa fa-plus"></i></a></button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-warning"><a asp-area="" asp-controller="Home" asp-action="DelistBook">Delist Book <i class="fa fa-minus"></i></a></button>
+                        </li>
+                    </ul>
+                </div>
             </main>
         </div>
 
-        <footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2021 - BookStorePortal - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </div>
+        <footer class="border-top footer text-muted ">
+                        
         </footer>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -126,3 +55,4 @@
         @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>
+

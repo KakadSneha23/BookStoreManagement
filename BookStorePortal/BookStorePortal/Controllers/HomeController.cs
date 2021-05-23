@@ -24,6 +24,19 @@ namespace BookStorePortal.Controllers
 
         public IActionResult Index()
         {
+            List<BookDetails> menu = new List<BookDetails>();
+            HttpClient client = new HttpClient();
+            HttpResponseMessage res = new HttpResponseMessage();
+
+            res = client.GetAsync("https://localhost:44348/api/Book/").Result;
+
+            if (res.IsSuccessStatusCode)
+            {
+                var result = res.Content.ReadAsStringAsync().Result;
+                menu = JsonConvert.DeserializeObject<List<BookDetails>>(result);
+                ViewBag.UpdatedMember = menu;
+                return View(menu);
+            }
             return View();
         }
 

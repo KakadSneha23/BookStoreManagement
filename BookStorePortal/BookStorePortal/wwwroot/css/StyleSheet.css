@@ -3,8 +3,6 @@
     margin: 0;
 }
 
-
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -44,9 +42,20 @@
         cursor: pointer;
     }
 
-a #details {
+.ButtonLinks {
+    margin-left:30%;
+}
+.ButtonLinks li{
+    padding:0 5%;
 }
 
+/* body contents */
+
+.headers {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
 
 .table {
     font-family: Arial, Helvetica, sans-serif;
@@ -74,3 +83,25 @@ a #details {
         background-color: #4CAF50;
         color: white;
     }
+
+/*--------------navigation bar----------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5%;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+    

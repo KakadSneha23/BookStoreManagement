@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hj8ms8lejfZ6fmm2FW9dI2SZx1Y52+DG277j3DAnWty4NfhNo6BcPlDQ4TJB1OQnAJQigCuQx1kQgeQH1Dg7qA==",
+  "dgSpecHash": "aZpF4wHzz0umQKbvCoBDTWfZkwOF5JH7DWRVSM8TG6Vkg7fIvZqJp46bBXLgUQJ8RCDFJOi1l7X95U7Fc1o+5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj",
+  "projectFilePath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\899069\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\899069\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

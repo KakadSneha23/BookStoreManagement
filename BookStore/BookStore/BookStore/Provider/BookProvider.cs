@@ -18,7 +18,7 @@ namespace BookStore.Provider
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                string qCmd = "select * from BookDetails where isActive=1";
+                string qCmd = "select * from BookDetails where IsActive=1";
                 SqlCommand command = new SqlCommand(qCmd, connection);
 
                 SqlDataReader sqlDataReader = command.ExecuteReader();

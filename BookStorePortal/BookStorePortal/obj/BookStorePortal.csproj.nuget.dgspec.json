@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj": {}
+    "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj": {
+    "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj",
+        "projectUniqueName": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj",
         "projectName": "BookStorePortal",
-        "projectPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj",
+        "projectPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStorePortal\\BookStorePortal\\BookStorePortal.csproj",
         "packagesPath": "C:\\Users\\899069\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStorePortal\\BookStorePortal\\obj\\",
+        "outputPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStorePortal\\BookStorePortal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\899069\\AppData\\Roaming\\NuGet\\NuGet.Config",

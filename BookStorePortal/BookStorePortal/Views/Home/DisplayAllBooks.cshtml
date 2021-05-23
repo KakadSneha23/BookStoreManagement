@@ -6,12 +6,15 @@
 
 <link href="~/css/site.css" rel="stylesheet" />
 <link href="~/css/StyleSheet.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="~/js/site.js"></script>
 
 
 <div>
     <main>
-        <table class="table" id="table-bg">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>
@@ -61,7 +64,7 @@
                             @Html.DisplayFor(modelItem => item.BookId)
                         </td>
                         <td>
-                            @Html.ActionLink(item.BookName, "GetBookDetails" ,new {id = item.BookId })
+                            @Html.ActionLink(item.BookName, "GetBookDetails", new { id = item.BookId })
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Author)
@@ -93,12 +96,7 @@
                         <td>
                             @Html.DisplayFor(modelItem => item.LastModifiedOn)
                         </td>
-                        <td>
-                            <a asp-action="Home/Index" asp-route-id="@item.BookId">Edit</a>
-                            <a asp-action="Home/Index" asp-route-id="@item.BookId">Delete</a>
-                            <a asp-action="Home/Index" asp-route-id="@item.BookId">Delist</a>
-                            <a asp-action="Home/Index" asp-route-id="@item.BookId">View</a>
-                        </td>
+                        
                     </tr>
                 }
             </tbody>
@@ -115,20 +113,21 @@
 
 </div>
 <script>
-function DisplaySpecificBook() {
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("details");
-    var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-    window.onclick = function (event) {
-        if (event.target == modal) {
+    function DisplaySpecificBook() {
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("details");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
             modal.style.display = "none";
         }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     }
-    }
-    </script>
+</script>
+

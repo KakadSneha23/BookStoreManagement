@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KflbUwU8Vnn+PG0FhWBpkdh7lfZ4oD5RePASb2v5zhte6D55H4P5Mf46M5Mej2jxKXmAepLEE+u0enwCRMC1NQ==",
+  "dgSpecHash": "qTaklfumP51BtOHrGNE70vfFFsbcgJCVrvlNf18ELxWFn8ZA3BB4tBbRZTCcloqjh+fzzEtHtGJHoKwVxig6lA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+  "projectFilePath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\899069\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\899069\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

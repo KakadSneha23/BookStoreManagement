@@ -641,11 +641,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+      "projectUniqueName": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
       "projectName": "BookStore",
-      "projectPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+      "projectPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
       "packagesPath": "C:\\Users\\899069\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStore\\BookStore\\BookStore\\obj\\",
+      "outputPath": "C:\\Users\\899069\\OneDrive - Cognizant\\Documents\\CognizantFiles\\Mentor project\\BookStoreManagement\\BookStore\\BookStore\\BookStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\899069\\AppData\\Roaming\\NuGet\\NuGet.Config",
